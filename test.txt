@@ -1,2 +1,11 @@
 This is for my python drill.
-Hello World!
+
+
+import os
+
+fName = 'hello.txt'
+
+fPath = "path'
+
+abPath = os.path.join(fPath, fName)
+print(abPath)

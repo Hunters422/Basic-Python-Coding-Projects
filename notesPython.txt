@@ -1,0 +1,204 @@
+Escape Sequences:
+A special combination of characters used within the string data type that instructs the Python interpreter to carry out an action or omit a succeeding character within the string.
+--------------------------
+Expression:
+The representation of a value within a Python statement.
+---------------------------
+File I/O:
+Python syntax to access, manipulate, and store files on the operating system.
+--------------------------
+Float:
+A Python data type containing a decimal value.
+-------------------------
+Function:
+A block of code with instructions to perform a task that can be called upon repeatedly within a program.
+--------------------------------
+Generator:
+A function that will cycle or iterate through the elements within a loop.
+===
+Graphical User Interface (GUI):
+A software design that affords the user with visual aids and controls that the user can manipulate through keyboard presses and mouse clicks which cause specific instructions to be carried out.
+===
+Hard-code:
+A fixed set of information written within the statement by the developer and cannot be adjusted later by the software.
+===
+Inheritance:
+The process where an object acquires the attributes and instructions from the class object being instantiated.
+===
+Integer:
+A data type that contains a whole number value.
+===
+Integrated Developmental Environment (IDE):
+A special software suite, providing a collection of useful features enabling developers to write their software more efficiently.
+=======
+Instantiation:
+The process of constructing an instance or a copy of a class object.
+======
+Iterate:
+To cycle through each element within a collection object or the iterable.
+===
+Iterable:
+An object that may be systematically cycled through or iterated upon.
+====
+Interpreter:
+A piece of software that reads each line of code and carries out the prescribed instructions depending on the syntax of the programming language being used.
+====
+Lambda Function:
+A temporary function that does not need to be traditionally defined and named and thus cannot be repeatedly called upon within the software. IE: anonymous function.
+===
+List:
+A collection data structure that may be used to contain a list of values which are mutable or changeable. List objects store each element of data with a corresponding index value.
+====
+List Comprehension:
+A technique used to filter through the data within a list object.
+===
+Loop:
+A built-in function used to iterate over a sequence of stored data.
+====
+Method:
+A method is a function that belongs to a particular class. A method is a block of code that performs a task that can be called upon repeatedly within the program.
+======
+Module:
+A file containing instructions and methods that may be imported into a script and called on to carry out tasks within a program.
+==============
+Namespace:
+An agreed-upon system to ensure that all of the names for objects within a program are unique to avoid code conflict. In Python, the namespace is a process of associating a name to the corresponding object in a dictionary. Python has an innate namespace which includes built-in methods but additional namespaces may be generated.
+===============
+Naming Convention:
+The technique or an agreed scheme to provide valid names for objects and files within a computer programming language.
+================
+Numeric:
+A data type containing a numeric value.
+====================
+Object:
+In Python and other Object Oriented Programming languages, virtually everything is considered to be an object. Each and every object in Python has attributes and behaviors associated with them and can be created by following the constructor of the class object.
+============
+Operand:
+The value that can have a specific operation applied to it.
+=========
+Operator:
+A symbol that performs an operation on a defined value or values.
+=========
+Parameter:
+A specific condition that can be outlined while a function is being defined. Whenever that function is called it will require to receive an argument that satisfies the specified parameter.
+========
+Parse:
+A process to orderly analyze through the data object and find meaning.
+==========
+PIP Installer:
+A program within the Python standard library that assists with the installation process for adding new packages to the library.
+=========
+Program Flow:
+The directions and rules the interpreter must follow as it executes each coded set of instructions.
+================
+Python Enhancement Proposal (PEP):
+The design document that provides the technical specifications of new features and their feature rationale to the Python community. PEP is intended to provide purpose and guidelines to Python developers.
+====================
+Python Package:
+A library of files and instructions that are added to the Python standard library affording developers with expanded capabilities of the Python language.
+==============
+Raw Input:
+Information that is provided by the user and has not been checked for validity. This raw input is delivered in a string data type.
+=================
+Read Eval Print Loop (REPL):
+An interactive program environment where simple programming instructions can be interpreted and executed in real-time.
+
+Reserved Keywords:
+A collection of special names that can be called on to produce specialized tasks and therefore these names should not be used to name any other objects.
+
+Statement:
+A statement is each line of instructions that the Python interpreter must execute.
+
+String:
+A data type that has a value of characters enclosed between a beginning and an ending set of quotation marks.
+
+String Formatting:
+A technique that may leverage built-in methods to return an easier to read and more meaningful stringed message back to the user.
+
+Syntax:
+A special set of rules, keywords, and code formatting that developers must use to write programs in a particular programming language.
+
+Tuple:
+A collection data structure that may be used to contain a list of values which are immutable or unchangeable. Tuple objects store each element of data with a corresponding index value. Once defined, the content of a Tuple may not be modified in any way.
+
+Variable:
+A special object that may be used to hold a value. The variable object serves as a direct link to the specific location in the computer’s memory where the actual data resides.
+-----------------------------------
+A "Tuple" is an immutable collection object. This means that every element in the array cannot be changed.
+
+If we need to make any adjustments to the contents of the original tuple, we would first need to either save the tuple and our changes within a new tuple or create a list out of the original tuple to make our changes.
+
+The following is a tuple of animal names:
+
+animal = ( 'zebra', 'alligator', 'giraffe', 'goat', 'ox' )
+Let's say that we needed to add and remove some new animal names to our original tuple object but the tuple is immutable therefore we cannot directly make these changes.
+
+The following code shows how we can accomplish our tasks by making a list out of our tuple. A list is a mutable object so we are now free to apply all our changes:
+
+animal = ( 'zebra', 'alligator', 'giraffe', 'goat', 'ox' )
+lstAnimal = list(animal)
+print(lstAnimal)
+------------------------------------------------------------
+['zebra', 'alligator', 'giraffe', 'goat', 'ox']
+But what if we have a string instead? The string object is also considered an immutable tuple object and if we tried to use the same procedure by using the list() function, we would actually create a new list where each character and empty spaces within that string would be considered as an element within our list, like so:
+
+myString = "Hello I am pleased to meet you"
+newString = list(myString)
+print(newString)
+----------------------------------------------------------
+['H', 'e', 'l', 'l', 'o', ' ', 'I', ' ', 'a', 'm', ' ', 'p', 'l', 'e', 'a', 's', 'e', 'd', ' ', 't', 'o', ' ', 'm', 'e', 'e', 't', ' ', 'y', 'o', 'u']
+Instead, what we need to do is make a new list where each word is a separate element.
+
+newString = myString.split(" ")
+print(newString)
+---------------------------------------
+['Hello', 'I', 'am', 'pleased', 'to', 'meet', 'you']
+By using the split() command and passing in the condition of an empty space " ", we can effectively create a list object from our string separated at each empty space.
+
+Helper Methods:
+In python, each data type has their own special set of built-in helper methods that developers can leverage to perform useful tasks on that particular piece of data.
+
+Python developers need to do some preliminary research to ensure that they are aware of all of these special helper methods and how to apply them.
+
+Drill:
+In Python, we developers can easily learn exactly what these helper methods are and how we may leverage them to make our lives easier as we write our code by using the help() command.
+
+Open Python IDLE and in the console type in the following:
+
+help(str)
+This should have printed out the details concerning the String class. The beauty with Python is that the entire Python library is transparent for developers to see and learn what each and every class, function, and keyword are and what they can do. The term for this concept is "Code Introspection".
+
+
+FUNCTION and METHODs are virtually the same objects. They both represent a block of code that performs a useful task and each may be called on repeatedly, anytime within a program.
+
+The primary difference between the two is that a method has been defined within a class object. In this case, the method belongs to that class object. This means that the method has a specific scope.
+
+We will discuss class objects in more detail later within the course. Just be sure to remember the fact that functions and methods are virtually the same objects.
+
+While using the input() method to receive information back from the user, sometimes the user will provide the information incorrectly. For these occasions, we developers need to design our applications with the forethought of correcting that data to make our applications work. This is called "DATA NORMALIZATION".
+
+Example:
+def getName():
+	fName = input("Please type in your first name without any capitalizations.\n>>> ")
+	print("Thank you {}, welcome back!".format(fName))
+
+Here we call on the function and the user fails to follow the directions we've outlined. The resulting data is now a problem for our application.
+
+>>> getName()
+
+Please type in your first name without any capitalizations.
+>>> DANiel
+
+Thank you DANiel, welcome back!
+We can compensate for our user's failure to comply with our program's instructions by using special techniques to normalize that data. In this case, we are going to apply the .lower() method which will change the data received automatically into a lowercase string.
+
+def getName():
+	fName = input("Please type in your first name without any capitalizations.\n>>> ").lower()
+	print("Thank you {}, welcome back!".format(fName))
+Now when the user fails to adhere to our instructions our new design will correct the data and allow our program to function as intended.
+
+>>> getName()
+Please type in your first name without any capitalizations.
+
+>>> DANiel
+Thank you daniel, welcome back!
